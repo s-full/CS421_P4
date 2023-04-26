@@ -4,24 +4,53 @@
 #include <stdbool.h>
 #include <semaphore.h>
 
-#include <buffer.h>
-
 typedef int buffer_item;
 #define BUFFER_SIZE 5
+#define EMPTY -1
 
 buffer_item buffer[BUFFER_SIZE];
 sem_t empty;
 sem_t full;
 pthread_mutex_t mutex;
 
+int in = 0;
+int out = 0;
+
 int insert_item(int item) 
 {
+    sem_wait(&empty);
+    pthread_mutex_lock(&mutex);
+
+    // critical section
+
+    buffer[in] = item;
+    in = (in + 1) % BUFFER_SIZE;
+
+    // end critical section
+
+    pthread_mutex_unlock(&mutex);
+    sem_post(&full);
 
     return 0;
 }
 
-void remove_item() 
+int remove_item() 
 {
+    sem_wait(&full);
+    pthread_mutex_lock(&mutex);
+
+    // critical section
+
+    buffer_item item = buffer[out];
+    buffer[out] = EMPTY;
+    out = (out+1) % BUFFER_SIZE;
+
+    // end critical section
+
+    pthread_mutex_lock(&mutex);
+    sem_post(&empty);
+
+    return item;
 
 }
 
@@ -45,12 +74,23 @@ void *producer(void *arg)
 
 void *consumer(void *arg)
 {
+    
+    buffer_item item;
+    while (true)
+     {
+          srand(time(NULL));
+          int sleepy_time = rand() % 3 +1;
+          sleep(sleepy_time);
 
+         item = remove_item();  
+    }
+    
 }
 
 main(int argc, char *argv[]) 
 {
-
+    in = 0;
+    out = 0;
     pthread_mutex_init(&mutex, NULL);
     sem_init(&empty, 0, BUFFER_SIZE);
     sem_init(&full, 0, 0);
@@ -68,9 +108,9 @@ main(int argc, char *argv[])
     }
 
     // get cmd line args
-    int time = argv[0];
-    int num_prods = argv[1];
-    int num_consums = argv[2];
+    int time = argv[1];
+    int num_prods = argv[2];
+    int num_consums = argv[3];
 
     // alloc threads
     pthread_t *consumer_threads = malloc(sizeof(pthread_t) * num_consums);
@@ -100,6 +140,8 @@ main(int argc, char *argv[])
             exit(3);
         }
     }
+
+    sleep(time);
 
     // join producer threads
     for (int i = 0; i < num_prods; i++) {
