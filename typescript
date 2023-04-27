@@ -1,0 +1,227 @@
+Script started on 2023-04-26 11:41:06-07:00 [TERM="xterm-256color" TTY="/dev/pts/11" COLUMNS="124" LINES="67"]
+[?2004h]0;sf@SF-Desktop: ~/Documents/CS421_P4[01;32msf@SF-Desktop[00m:[01;34m~/Documents/CS421_P4[00m$ gcc -o sfprog4 main.c
+[?2004l[?2004h]0;sf@SF-Desktop: ~/Documents/CS421_P4[01;32msf@SF-Desktop[00m:[01;34m~/Documents/CS421_P4[00m$ ./sfprog4 30 1 1
+[?2004lCreating producer thread with id 140162311161408
+Creating consumer thread with id 140162302768704
+Consumer thread 140162302768704 sleeping for 2 seconds
+Main thread sleep for 30 secondsProducer thread 140162311161408 sleeping for 2 seconds
+ Producer thread 140162311161408 inserted 82
+insert_item inserted item 82 at position 0	[82][empty][empty][empty][empty] in = 1, out = 0
+Producer thread 140162311161408 sleeping for 3 seconds
+ remove_item removed item 82 at position 1	[empty][empty][empty][empty][empty] in = 1, out = 1
+Consumer thread 140162302768704 sleeping for 3 seconds
+Producer thread 140162311161408 inserted 65
+insert_item inserted item 65 at position 1	[empty][65][empty][empty][empty] in = 2, out = 1
+Producer thread 140162311161408 sleeping for 2 seconds
+ remove_item removed item 65 at position 2	[empty][empty][empty][empty][empty] in = 2, out = 2
+Consumer thread 140162302768704 sleeping for 2 seconds
+Producer thread 140162311161408 inserted 38
+insert_item inserted item 38 at position 2	[empty][empty][38][empty][empty] in = 3, out = 2
+Producer thread 140162311161408 sleeping for 1 seconds
+ remove_item removed item 38 at position 3	[empty][empty][empty][empty][empty] in = 3, out = 3
+Consumer thread 140162302768704 sleeping for 1 seconds
+Producer thread 140162311161408 inserted 25
+insert_item inserted item 25 at position 3	[empty][empty][empty][25][empty] in = 4, out = 3
+Producer thread 140162311161408 sleeping for 3 seconds
+ remove_item removed item 25 at position 4	[empty][empty][empty][empty][empty] in = 4, out = 4
+Consumer thread 140162302768704 sleeping for 3 seconds
+Producer thread 140162311161408 inserted 22
+insert_item inserted item 22 at position 4	[empty][empty][empty][empty][22] in = 0, out = 4
+Producer thread 140162311161408 sleeping for 1 seconds
+ remove_item removed item 22 at position 0	[empty][empty][empty][empty][empty] in = 0, out = 0
+Consumer thread 140162302768704 sleeping for 1 seconds
+Producer thread 140162311161408 inserted 56
+insert_item inserted item 56 at position 0	[56][empty][empty][empty][empty] in = 1, out = 0
+Producer thread 140162311161408 sleeping for 1 seconds
+ remove_item removed item 56 at position 1	[empty][empty][empty][empty][empty] in = 1, out = 1
+Consumer thread 140162302768704 sleeping for 1 seconds
+Producer thread 140162311161408 inserted 23
+insert_item inserted item 23 at position 1	[empty][23][empty][empty][empty] in = 2, out = 1
+Producer thread 140162311161408 sleeping for 1 seconds
+ remove_item removed item 23 at position 2	[empty][empty][empty][empty][empty] in = 2, out = 2
+Consumer thread 140162302768704 sleeping for 1 seconds
+Producer thread 140162311161408 inserted 34
+insert_item inserted item 34 at position 2	[empty][empty][34][empty][empty] in = 3, out = 2
+Producer thread 140162311161408 sleeping for 2 seconds
+ remove_item removed item 34 at position 3	[empty][empty][empty][empty][empty] in = 3, out = 3
+Consumer thread 140162302768704 sleeping for 2 seconds
+Producer thread 140162311161408 inserted 42
+insert_item inserted item 42 at position 3	[empty][empty][empty][42][empty] in = 4, out = 3
+Producer thread 140162311161408 sleeping for 1 seconds
+ remove_item removed item 42 at position 4	[empty][empty][empty][empty][empty] in = 4, out = 4
+Consumer thread 140162302768704 sleeping for 1 seconds
+Producer thread 140162311161408 inserted 98
+insert_item inserted item 98 at position 4	[empty][empty][empty][empty][98] in = 0, out = 4
+Producer thread 140162311161408 sleeping for 2 seconds
+ remove_item removed item 98 at position 0	[empty][empty][empty][empty][empty] in = 0, out = 0
+Consumer thread 140162302768704 sleeping for 2 seconds
+Producer thread 140162311161408 inserted 48
+insert_item inserted item 48 at position 0	[48][empty][empty][empty][empty] in = 1, out = 0
+Producer thread 140162311161408 sleeping for 2 seconds
+ remove_item removed item 48 at position 1	[empty][empty][empty][empty][empty] in = 1, out = 1
+Consumer thread 140162302768704 sleeping for 2 seconds
+Producer thread 140162311161408 inserted 65
+insert_item inserted item 65 at position 1	[empty][65][empty][empty][empty] in = 2, out = 1
+Producer thread 140162311161408 sleeping for 2 seconds
+ remove_item removed item 65 at position 2	[empty][empty][empty][empty][empty] in = 2, out = 2
+Consumer thread 140162302768704 sleeping for 2 seconds
+Producer thread 140162311161408 inserted 39
+insert_item inserted item 39 at position 2	[empty][empty][39][empty][empty] in = 3, out = 2
+Producer thread 140162311161408 sleeping for 3 seconds
+ remove_item removed item 39 at position 3	[empty][empty][empty][empty][empty] in = 3, out = 3
+Consumer thread 140162302768704 sleeping for 3 seconds
+Producer thread 140162311161408 inserted 45
+insert_item inserted item 45 at position 3	[empty][empty][empty][45][empty] in = 4, out = 3
+Producer thread 140162311161408 sleeping for 3 seconds
+ remove_item removed item 45 at position 4	[empty][empty][empty][empty][empty] in = 4, out = 4
+Consumer thread 140162302768704 sleeping for 3 seconds
+Producer thread 140162311161408 inserted 57
+insert_item inserted item 57 at position 4	[empty][empty][empty][empty][57] in = 0, out = 4
+Producer thread 140162311161408 sleeping for 2 seconds
+ remove_item removed item 57 at position 0	[empty][empty][empty][empty][empty] in = 0, out = 0
+Consumer thread 140162302768704 sleeping for 2 seconds
+Main thread exiting
+[?2004h]0;sf@SF-Desktop: ~/Documents/CS421_P4[01;32msf@SF-Desktop[00m:[01;34m~/Documents/CS421_P4[00m$ ./sfprog4 30 2 2
+[?2004lCreating producer thread with id 140563251652160
+Producer thread 140563251652160 sleeping for 1 seconds
+ Main thread sleep for 30 secondsCreating consumer thread with id 140563234866752
+Consumer thread 140563234866752 sleeping for 1 seconds
+Creating consumer thread with id 140563100649024
+Consumer thread 140563100649024 sleeping for 1 seconds
+Creating producer thread with id 140563243259456
+Producer thread 140563243259456 sleeping for 1 seconds
+ Producer thread 140563243259456 inserted 4
+insert_item inserted item 4 at position 0	[4][empty][empty][empty][empty] in = 1, out = 0
+Producer thread 140563243259456 sleeping for 3 seconds
+ Producer thread 140563251652160 inserted 75
+insert_item inserted item 75 at position 1	[4][75][empty][empty][empty] in = 2, out = 0
+Producer thread 140563251652160 sleeping for 3 seconds
+ remove_item removed item 4 at position 1	[empty][75][empty][empty][empty] in = 2, out = 1
+Consumer thread 140563234866752 sleeping for 3 seconds
+remove_item removed item 75 at position 2	[empty][empty][empty][empty][empty] in = 2, out = 2
+Consumer thread 140563100649024 sleeping for 3 seconds
+Producer thread 140563243259456 inserted 75
+insert_item inserted item 75 at position 2	[empty][empty][75][empty][empty] in = 3, out = 2
+Producer thread 140563243259456 sleeping for 1 seconds
+ remove_item removed item 75 at position 3	[empty][empty][empty][empty][empty] in = 3, out = 3
+Consumer thread 140563234866752 sleeping for 1 seconds
+Producer thread 140563251652160 inserted 64
+insert_item inserted item 64 at position 3	[empty][empty][empty][64][empty] in = 4, out = 3
+Producer thread 140563251652160 sleeping for 1 seconds
+ remove_item removed item 64 at position 4	[empty][empty][empty][empty][empty] in = 4, out = 4
+Consumer thread 140563100649024 sleeping for 1 seconds
+Producer thread 140563243259456 inserted 64
+insert_item inserted item 64 at position 4	[empty][empty][empty][empty][64] in = 0, out = 4
+Producer thread 140563243259456 sleeping for 3 seconds
+ remove_item removed item 64 at position 0	[empty][empty][empty][empty][empty] in = 0, out = 0
+Consumer thread 140563234866752 sleeping for 3 seconds
+Producer thread 140563251652160 inserted 38
+insert_item inserted item 38 at position 0	[38][empty][empty][empty][empty] in = 1, out = 0
+Producer thread 140563251652160 sleeping for 3 seconds
+ remove_item removed item 38 at position 1	[empty][empty][empty][empty][empty] in = 1, out = 1
+Consumer thread 140563100649024 sleeping for 3 seconds
+Producer thread 140563243259456 inserted 38
+insert_item inserted item 38 at position 1	[empty][38][empty][empty][empty] in = 2, out = 1
+Producer thread 140563243259456 sleeping for 2 seconds
+ remove_item removed item 38 at position 2	[empty][empty][empty][empty][empty] in = 2, out = 2
+Consumer thread 140563234866752 sleeping for 2 seconds
+Producer thread 140563251652160 inserted 16
+insert_item inserted item 16 at position 2	[empty][empty][16][empty][empty] in = 3, out = 2
+Producer thread 140563251652160 sleeping for 2 seconds
+ remove_item removed item 16 at position 3	[empty][empty][empty][empty][empty] in = 3, out = 3
+Consumer thread 140563100649024 sleeping for 2 seconds
+Producer thread 140563243259456 inserted 16
+insert_item inserted item 16 at position 3	[empty][empty][empty][16][empty] in = 4, out = 3
+Producer thread 140563243259456 sleeping for 3 seconds
+ remove_item removed item 16 at position 4	[empty][empty][empty][empty][empty] in = 4, out = 4
+Consumer thread 140563234866752 sleeping for 3 seconds
+Producer thread 140563251652160 inserted 14
+insert_item inserted item 14 at position 4	[empty][empty][empty][empty][14] in = 0, out = 4
+Producer thread 140563251652160 sleeping for 3 seconds
+ remove_item removed item 14 at position 0	[empty][empty][empty][empty][empty] in = 0, out = 0
+Consumer thread 140563100649024 sleeping for 3 seconds
+Producer thread 140563243259456 inserted 14
+insert_item inserted item 14 at position 0	[14][empty][empty][empty][empty] in = 1, out = 0
+Producer thread 140563243259456 sleeping for 3 seconds
+ remove_item removed item 14 at position 1	[empty][empty][empty][empty][empty] in = 1, out = 1
+Consumer thread 140563234866752 sleeping for 3 seconds
+Producer thread 140563251652160 inserted 85
+insert_item inserted item 85 at position 1	[empty][85][empty][empty][empty] in = 2, out = 1
+Producer thread 140563251652160 sleeping for 2 seconds
+ remove_item removed item 85 at position 2	[empty][empty][empty][empty][empty] in = 2, out = 2
+Consumer thread 140563100649024 sleeping for 2 seconds
+Producer thread 140563251652160 inserted 82
+insert_item inserted item 82 at position 2	[empty][empty][82][empty][empty] in = 3, out = 2
+Producer thread 140563251652160 sleeping for 3 seconds
+ remove_item removed item 82 at position 3	[empty][empty][empty][empty][empty] in = 3, out = 3
+Consumer thread 140563100649024 sleeping for 3 seconds
+Producer thread 140563243259456 inserted 97
+insert_item inserted item 97 at position 3	[empty][empty][empty][97][empty] in = 4, out = 3
+Producer thread 140563243259456 sleeping for 2 seconds
+ remove_item removed item 97 at position 4	[empty][empty][empty][empty][empty] in = 4, out = 4
+Consumer thread 140563234866752 sleeping for 2 seconds
+Producer thread 140563243259456 inserted 69
+insert_item inserted item 69 at position 4	[empty][empty][empty][empty][69] in = 0, out = 4
+Producer thread 140563243259456 sleeping for 2 seconds
+ remove_item removed item 69 at position 0	[empty][empty][empty][empty][empty] in = 0, out = 0
+Consumer thread 140563234866752 sleeping for 2 seconds
+Producer thread 140563251652160 inserted 71
+insert_item inserted item 71 at position 0	[71][empty][empty][empty][empty] in = 1, out = 0
+Producer thread 140563251652160 sleeping for 2 seconds
+ remove_item removed item 71 at position 1	[empty][empty][empty][empty][empty] in = 1, out = 1
+Consumer thread 140563100649024 sleeping for 2 seconds
+Producer thread 140563243259456 inserted 71
+insert_item inserted item 71 at position 1	[empty][71][empty][empty][empty] in = 2, out = 1
+Producer thread 140563243259456 sleeping for 3 seconds
+ remove_item removed item 71 at position 2	[empty][empty][empty][empty][empty] in = 2, out = 2
+Consumer thread 140563234866752 sleeping for 3 seconds
+Producer thread 140563251652160 inserted 63
+insert_item inserted item 63 at position 2	[empty][empty][63][empty][empty] in = 3, out = 2
+Producer thread 140563251652160 sleeping for 3 seconds
+ remove_item removed item 63 at position 3	[empty][empty][empty][empty][empty] in = 3, out = 3
+Consumer thread 140563100649024 sleeping for 3 seconds
+Producer thread 140563243259456 inserted 63
+insert_item inserted item 63 at position 3	[empty][empty][empty][63][empty] in = 4, out = 3
+Producer thread 140563243259456 sleeping for 1 seconds
+ remove_item removed item 63 at position 4	[empty][empty][empty][empty][empty] in = 4, out = 4
+Consumer thread 140563234866752 sleeping for 1 seconds
+Producer thread 140563251652160 inserted 13
+insert_item inserted item 13 at position 4	[empty][empty][empty][empty][13] in = 0, out = 4
+Producer thread 140563251652160 sleeping for 1 seconds
+ remove_item removed item 13 at position 0	[empty][empty][empty][empty][empty] in = 0, out = 0
+Consumer thread 140563100649024 sleeping for 1 seconds
+Producer thread 140563243259456 inserted 13
+insert_item inserted item 13 at position 0	[13][empty][empty][empty][empty] in = 1, out = 0
+Producer thread 140563243259456 sleeping for 2 seconds
+ remove_item removed item 13 at position 1	[empty][empty][empty][empty][empty] in = 1, out = 1
+Consumer thread 140563234866752 sleeping for 2 seconds
+Producer thread 140563251652160 inserted 95
+insert_item inserted item 95 at position 1	[empty][95][empty][empty][empty] in = 2, out = 1
+Producer thread 140563251652160 sleeping for 2 seconds
+ remove_item removed item 95 at position 2	[empty][empty][empty][empty][empty] in = 2, out = 2
+Consumer thread 140563100649024 sleeping for 2 seconds
+Producer thread 140563251652160 inserted 95
+insert_item inserted item 95 at position 2	[empty][empty][95][empty][empty] in = 3, out = 2
+Producer thread 140563251652160 sleeping for 1 seconds
+ Producer thread 140563243259456 inserted 56
+insert_item inserted item 56 at position 3	[empty][empty][95][56][empty] in = 4, out = 2
+Producer thread 140563243259456 sleeping for 1 seconds
+ remove_item removed item 95 at position 3	[empty][empty][empty][56][empty] in = 4, out = 3
+Consumer thread 140563234866752 sleeping for 1 seconds
+remove_item removed item 56 at position 4	[empty][empty][empty][empty][empty] in = 4, out = 4
+Consumer thread 140563100649024 sleeping for 1 seconds
+Producer thread 140563251652160 inserted 56
+insert_item inserted item 56 at position 4	[empty][empty][empty][empty][56] in = 0, out = 4
+Producer thread 140563251652160 sleeping for 3 seconds
+ Producer thread 140563243259456 inserted 15
+insert_item inserted item 15 at position 0	[15][empty][empty][empty][56] in = 1, out = 4
+Producer thread 140563243259456 sleeping for 3 seconds
+ remove_item removed item 56 at position 0	[15][empty][empty][empty][empty] in = 1, out = 0
+Consumer thread 140563234866752 sleeping for 3 seconds
+remove_item removed item 15 at position 1	[empty][empty][empty][empty][empty] in = 1, out = 1
+Consumer thread 140563100649024 sleeping for 3 seconds
+Main thread exiting
+[?2004h]0;sf@SF-Desktop: ~/Documents/CS421_P4[01;32msf@SF-Desktop[00m:[01;34m~/Documents/CS421_P4[00m$ exit
+[?2004lexit
+
+Script done on 2023-04-26 11:42:43-07:00 [COMMAND_EXIT_CODE="0"]
